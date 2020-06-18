@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +10,25 @@
         /**
          * When the body loads, run the main code
          */
-        function startApp () {
+        function startApp() {
             const testingCycles = ['RED', 'GREEN', 'REFACTOR'];
             let currentCycle = 'RED';
-            console.log({testingCycles});
+            console.log({ testingCycles });
             testingCycles.forEach(function (testingCycle, index) {
                 // conditionally check for the current cycle
-                if () {
-                    
+                if (currentCycle === testingCycle) {
+                    console.log("We have a match")
                 }
+                else { console.log("no match") }
             });
 
         }
     </script>
 
 </head>
+
 <body onload="startApp()">
-    
+
 </body>
+
 </html>
